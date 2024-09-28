@@ -1,0 +1,113 @@
+version: "3.1"
+
+nlu:
+- intent: consultar_productos
+  examples: |
+    - ¿Cuáles son los productos disponibles?
+    - Dame una lista de productos
+    - Quiero ver los productos
+    - ¿Qué productos tienes?
+    - Muéstrame un producto
+    - Muestra los productos
+
+- intent: consultar_marcas
+  examples: |
+    - ¿Cuáles son las marcas disponibles?
+    - Dame una lista de marcas
+    - Quiero ver las marcas
+    - ¿Qué marcas tienes?
+
+- intent: saludo
+  examples: |
+    - hola
+    - qué tal
+    - buenas
+    - hola, ¿qué tal?
+    - buenos días
+    - buenas noches
+    - buenas tardes
+    - hola amigo
+    - hey
+    - hola, ¿cómo estás?
+
+- intent: despedida
+  examples: |
+    - adiós
+    - hasta luego
+    - nos vemos
+    - hasta la próxima
+    - chao
+    - cuídate
+    - que tengas un buen día
+    - hasta pronto
+    - me voy
+    - nos vemos luego
+
+- intent: afirmar
+  examples: |
+    - sí
+    - claro
+    - por supuesto
+    - correcto
+    - exacto
+    - definitivamente
+    - seguro que sí
+
+- intent: negar
+  examples: |
+    - no
+    - para nada
+    - en absoluto
+    - no lo creo
+    - no me gusta
+    - de ninguna manera
+    - no, gracias
+
+- intent: estado_feliz
+  examples: |
+    - perfecto
+    - genial
+    - increíble
+    - me siento como un rey
+    - maravilloso
+    - me siento muy bien
+    - estoy muy feliz
+    - estoy genial
+    - estoy increíble
+    - voy a conquistar el mundo
+    - súper emocionado
+    - extremadamente bien
+    - todo perfecto
+    - muy bien
+    - súper bien
+
+- intent: estado_triste
+  examples: |
+    - mi día fue horrible
+    - estoy triste
+    - no me siento muy bien
+    - estoy decepcionado
+    - súper triste
+    - estoy muy triste
+    - muy triste
+    - no estoy bien
+    - no estoy muy bien
+    - extremadamente triste
+    - me siento fatal
+    - estoy desanimado
+
+- intent: reto_al_bot
+  examples: |
+    - ¿eres un bot?
+    - ¿eres un humano?
+    - ¿estoy hablando con un bot?
+    - ¿estoy hablando con una persona?
+    - ¿eres real?
+    - ¿me estás escuchando, bot?
+
+intents:
+  - consultar_productos
+  - consultar_marcas
+
+
+

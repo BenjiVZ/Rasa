@@ -1,0 +1,40 @@
+version: "3.1"
+
+stories:
+
+- story: consultar productos
+  steps:
+  - intent: consultar_productos
+  - action: action_consultar_productos
+
+- story: consultar marcas
+  steps:
+  - intent: consultar_marcas
+  - action: action_consultar_marcas
+
+- story: camino feliz
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: estado_feliz
+  - action: utter_feliz
+
+- story: camino triste 1
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: estado_triste
+  - action: utter_ánimo
+  - action: utter_ayudó
+  - intent: afirmar
+  - action: utter_feliz
+
+- story: camino triste 2
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: estado_triste
+  - action: utter_ánimo
+  - action: utter_ayudó
+  - intent: negar
+  - action: utter_despedida

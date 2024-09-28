@@ -1,0 +1,13 @@
+version: "3.1"
+
+rules:
+
+- rule: Decir adiós cuando el usuario se despida
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Decir 'Soy un bot' cuando el usuario lo pregunte
+  steps:
+  - intent: reto_al_bot
+  - action: utter_yo_soy_un_bot

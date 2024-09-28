@@ -1,0 +1,55 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedida
+  - afirmar
+  - negar
+  - estado_feliz
+  - estado_triste
+  - reto_al_bot
+  - consultar_productos
+  - consultar_marcas
+
+actions:
+  - action_consultar_productos
+  - action_consultar_marcas
+
+responses:
+  utter_saludo:
+  - text: "¡Hola! ¿Cómo estás?"
+
+  utter_cheer_up:
+  - text: "Aquí tienes algo para animarte:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "¿Eso te ayudó?"
+
+  utter_feliz:
+  - text: "¡Genial, sigue así!"
+
+  utter_despedida:
+  - text: "Adiós"
+
+  utter_yo_soy_un_bot:
+  - text: "Soy un bot, impulsado por Rasa."
+
+  utter_goodbye:
+  - text: "Adiós"
+
+  utter_greet:
+  - text: "¡Hola!"
+
+  utter_happy:
+  - text: "¡Estoy feliz de escuchar eso!"
+
+  utter_ánimo:
+  - text: "¡No te preocupes! Todo mejorará."
+
+  utter_ayudó:
+  - text: "¿Eso te ayudó?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,12 @@
+conda activate Rasa
+
+=============================
+
+
+rasa train
+
+rasa shell
+
+=============================
+
+rasa run actions
