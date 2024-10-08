@@ -4,37 +4,44 @@ stories:
 
 - story: consultar productos
   steps:
-  - intent: consultar_productos
-  - action: action_consultar_productos
+    - intent: consultar_productos
+    - action: action_consultar_productos
 
 - story: consultar marcas
   steps:
-  - intent: consultar_marcas
-  - action: action_consultar_marcas
+    - intent: consultar_marcas
+    - action: action_consultar_marcas
+
+# Historia para manejar el formulario de filtrado de productos
+- story: Filtrar productos con criterios del usuario
+  steps:
+    - intent: filtrar_productos
+    - action: product_filter_form  # Asegúrate de que coincide con el nombre en el dominio
+    - active_loop: product_filter_form
 
 - story: camino feliz
   steps:
-  - intent: saludo
-  - action: utter_saludo
-  - intent: estado_feliz
-  - action: utter_feliz
+    - intent: saludo
+    - action: utter_saludo
+    - intent: estado_feliz
+    - action: utter_feliz
 
 - story: camino triste 1
   steps:
-  - intent: saludo
-  - action: utter_saludo
-  - intent: estado_triste
-  - action: utter_ánimo
-  - action: utter_ayudó
-  - intent: afirmar
-  - action: utter_feliz
+    - intent: saludo
+    - action: utter_saludo
+    - intent: estado_triste
+    - action: utter_ánimo
+    - action: utter_ayudó
+    - intent: afirmar
+    - action: utter_feliz
 
 - story: camino triste 2
   steps:
-  - intent: saludo
-  - action: utter_saludo
-  - intent: estado_triste
-  - action: utter_ánimo
-  - action: utter_ayudó
-  - intent: negar
-  - action: utter_despedida
+    - intent: saludo
+    - action: utter_saludo
+    - intent: estado_triste
+    - action: utter_ánimo
+    - action: utter_ayudó
+    - intent: negar
+    - action: utter_despedida

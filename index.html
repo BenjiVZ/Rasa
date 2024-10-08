@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+
+<body>
+  <script>!(function () {
+      let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+      (e.src =
+        "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+          window.WebChat.default(
+            {
+              initPayload '/greet',
+              customData: { language: "es" },
+              socketUrl: "http://localhost:3005",
+              // add other props here
+            },
+            null
+          );
+        }),
+        t.insertBefore(e, t.firstChild);
+    })();
+  </script>
+</body>
+
+</html>
+<!-- 
+Aquí tienes una lista de productos cosméticos basados en las marcas que mencioné. Los detalles incluyen el nombre del
+producto, precio, descripción, y otros datos según la estructura de la tabla `myapp_producto`. Para simplificar, he
+asumido precios y detalles ficticios para cada producto.
+
+### Productos para registrar:
+
+1. **Producto**: L'Oréal Revitalift Cream
+**Precio**: 350
+**Descripción**: Crema antienvejecimiento con pro-retinol y ácido hialurónico.
+**Popular**: True
+**Tendencia**: False
+**Nuevo**: True
+**Fecha de Fabricación**: 2023-06-15
+**Marca**: L'Oréal
+
+2. **Producto**: Maybelline Fit Me Foundation
+**Precio**: 250
+**Descripción**: Base de maquillaje líquida mate con cobertura ajustable.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: False
+**Fecha de Fabricación**: 2022-11-10
+**Marca**: Maybelline
+
+3. **Producto**: NARS Radiant Creamy Concealer
+**Precio**: 450
+**Descripción**: Corrector cremoso con alta cobertura y acabado natural.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: True
+**Fecha de Fabricación**: 2023-03-12
+**Marca**: NARS
+
+4. **Producto**: Estée Lauder Double Wear Foundation
+**Precio**: 600
+**Descripción**: Base de maquillaje de larga duración con acabado mate.
+**Popular**: True
+**Tendencia**: False
+**Nuevo**: False
+**Fecha de Fabricación**: 2022-09-05
+**Marca**: Estée Lauder
+
+5. **Producto**: Clinique Moisture Surge
+**Precio**: 500
+**Descripción**: Hidratante en gel para 72 horas de hidratación intensa.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: True
+**Fecha de Fabricación**: 2023-05-01
+**Marca**: Clinique
+
+6. **Producto**: Lancôme La Vie Est Belle Perfume
+**Precio**: 800
+**Descripción**: Perfume floral con notas dulces y amaderadas.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: False
+**Fecha de Fabricación**: 2022-07-20
+**Marca**: Lancôme
+
+7. **Producto**: MAC Ruby Woo Lipstick
+**Precio**: 400
+**Descripción**: Labial mate de color rojo intenso y duradero.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: False
+**Fecha de Fabricación**: 2023-01-22
+**Marca**: MAC
+
+8. **Producto**: Urban Decay All Nighter Setting Spray
+**Precio**: 350
+**Descripción**: Spray fijador de maquillaje de larga duración.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: False
+**Fecha de Fabricación**: 2023-04-10
+**Marca**: Urban Decay
+
+9. **Producto**: Revlon Super Lustrous Lipstick
+**Precio**: 200
+**Descripción**: Labial cremoso con colores vibrantes y acabado brillante.
+**Popular**: True
+**Tendencia**: False
+**Nuevo**: False
+**Fecha de Fabricación**: 2022-08-30
+**Marca**: Revlon
+
+10. **Producto**: CoverGirl LashBlast Mascara
+**Precio**: 180
+**Descripción**: Máscara de pestañas voluminizadora de larga duración.
+**Popular**: True
+**Tendencia**: False
+**Nuevo**: True
+**Fecha de Fabricación**: 2023-02-14
+**Marca**: CoverGirl
+
+11. **Producto**: Neutrogena Hydro Boost Gel Cream
+**Precio**: 320
+**Descripción**: Crema hidratante en gel con ácido hialurónico.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: True
+**Fecha de Fabricación**: 2023-06-05
+**Marca**: Neutrogena
+
+12. **Producto**: Eucerin Intensive Repair Lotion
+**Precio**: 300
+**Descripción**: Loción reparadora para piel seca con alfa-hidroxiácidos.
+**Popular**: True
+**Tendencia**: False
+**Nuevo**: True
+**Fecha de Fabricación**: 2023-04-18
+**Marca**: Eucerin
+
+13. **Producto**: Olay Regenerist Micro-Sculpting Cream
+**Precio**: 450
+**Descripción**: Crema anti-edad con péptidos y ácido hialurónico.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: False
+**Fecha de Fabricación**: 2022-09-12
+**Marca**: Olay
+
+14. **Producto**: Garnier Micellar Water
+**Precio**: 220
+**Descripción**: Agua micelar limpiadora todo en uno para todo tipo de piel.
+**Popular**: True
+**Tendencia**: False
+**Nuevo**: True
+**Fecha de Fabricación**: 2023-05-08
+**Marca**: Garnier
+
+15. **Producto**: Dove Deep Moisture Body Wash
+**Precio**: 250
+**Descripción**: Gel de baño hidratante para piel sensible.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: False
+**Fecha de Fabricación**: 2023-01-15
+**Marca**: Dove
+
+16. **Producto**: Aveeno Daily Moisturizing Lotion
+**Precio**: 270
+**Descripción**: Loción hidratante diaria con avena coloidal.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: False
+**Fecha de Fabricación**: 2022-12-25
+**Marca**: Aveeno
+
+17. **Producto**: CeraVe Foaming Facial Cleanser
+**Precio**: 320
+**Descripción**: Limpiador facial espumoso con ceramidas y niacinamida.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: False
+**Fecha de Fabricación**: 2022-11-01
+**Marca**: CeraVe
+
+18. **Producto**: NYX Matte Finish Setting Spray
+**Precio**: 180
+**Descripción**: Spray fijador de maquillaje con acabado mate.
+**Popular**: True
+**Tendencia**: False
+**Nuevo**: True
+**Fecha de Fabricación**: 2023-07-07
+**Marca**: NYX
+
+19. **Producto**: Sephora Collection Pro Foundation Brush
+**Precio**: 350
+**Descripción**: Brocha profesional para aplicar base de maquillaje.
+**Popular**: True
+**Tendencia**: False
+**Nuevo**: False
+**Fecha de Fabricación**: 2023-02-28
+**Marca**: Sephora Collection
+
+20. **Producto**: Fenty Beauty Gloss Bomb Universal Lip Luminizer
+**Precio**: 320
+**Descripción**: Brillo de labios universal con acabado brillante.
+**Popular**: True
+**Tendencia**: True
+**Nuevo**: True
+**Fecha de Fabricación**: 2023-06-22
+**Marca**: Fenty Beauty
+
+Con estos detalles, puedes crear los registros en la base de datos. Si necesitas ayuda para estructurar las consultas
+SQL de inserción, dime y te las proporciono. -->

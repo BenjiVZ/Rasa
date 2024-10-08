@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-marca",
+      "2": "I-marca",
+      "3": "L-marca",
+      "4": "U-marca",
+      "5": "B-nombre",
+      "6": "I-nombre",
+      "7": "L-nombre",
+      "8": "U-nombre",
+      "9": "B-precio_max",
+      "10": "I-precio_max",
+      "11": "L-precio_max",
+      "12": "U-precio_max",
+      "13": "B-precio_min",
+      "14": "I-precio_min",
+      "15": "L-precio_min",
+      "16": "U-precio_min",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-marca": 1,
+      "I-marca": 2,
+      "L-marca": 3,
+      "U-marca": 4,
+      "B-nombre": 5,
+      "I-nombre": 6,
+      "L-nombre": 7,
+      "U-nombre": 8,
+      "B-precio_max": 9,
+      "I-precio_max": 10,
+      "L-precio_max": 11,
+      "U-precio_max": 12,
+      "B-precio_min": 13,
+      "I-precio_min": 14,
+      "L-precio_min": 15,
+      "U-precio_min": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

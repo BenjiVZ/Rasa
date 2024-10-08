@@ -10,45 +10,99 @@ intents:
   - reto_al_bot
   - consultar_productos
   - consultar_marcas
+  - filtrar_productos
+
+entities:
+  - marca
+  - nombre
+  - descripcion
+  - precio_min
+  - precio_max
+
+slots:
+  marca:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: marca
+
+  nombre:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: nombre
+
+  descripcion:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: descripcion
+
+  precio_min:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: precio_min
+
+  precio_max:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: precio_max
+
+forms:
+  product_filter_form:
+    required_slots:
+      - marca
+      - nombre
+      - descripcion
+      - precio_min
+      - precio_max
 
 actions:
   - action_consultar_productos
   - action_consultar_marcas
+  - action_filtrar_productos
+  - validate_filter_product_form
 
 responses:
   utter_saludo:
-  - text: "¡Hola! ¿Cómo estás?"
-
-  utter_cheer_up:
-  - text: "Aquí tienes algo para animarte:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "¿Eso te ayudó?"
+    - text: "¡Hola! ¿Cómo estás?"
 
   utter_feliz:
-  - text: "¡Genial, sigue así!"
+    - text: "¡Genial, sigue así!"
 
   utter_despedida:
-  - text: "Adiós"
-
-  utter_yo_soy_un_bot:
-  - text: "Soy un bot, impulsado por Rasa."
-
-  utter_goodbye:
-  - text: "Adiós"
-
-  utter_greet:
-  - text: "¡Hola!"
-
-  utter_happy:
-  - text: "¡Estoy feliz de escuchar eso!"
+    - text: "Adiós, ¡hasta luego!"
 
   utter_ánimo:
-  - text: "¡No te preocupes! Todo mejorará."
+    - text: "¡No te preocupes! Todo mejorará."
 
   utter_ayudó:
-  - text: "¿Eso te ayudó?"
+    - text: "¿Eso te ayudó?"
+
+  utter_ask_marca:
+    - text: "¿Qué marca de productos estás buscando?"
+
+  utter_ask_nombre:
+    - text: "¿Tienes un nombre de producto específico en mente?"
+
+  utter_ask_descripcion:
+    - text: "¿Hay alguna característica específica que estés buscando?"
+
+  utter_ask_precio_min:
+    - text: "¿Cuál es el precio mínimo que estás dispuesto a pagar?"
+
+  utter_ask_precio_max:
+    - text: "¿Cuál es el precio máximo que estás dispuesto a pagar?"
+
+  utter_yo_soy_un_bot:
+    - text: "Soy un asistente virtual diseñado para ayudarte con consultas sobre productos."
 
 session_config:
   session_expiration_time: 60

@@ -1,21 +1,29 @@
 version: "3.1"
 
 nlu:
+- intent: filtrar_productos
+  examples: |
+    - Muéstrame productos de [Nivea](marca) con un precio menor a [20](precio_max) euros
+    - Quiero cremas de la marca [L'Oréal](marca) entre [10](precio_min) y [50](precio_max)
+    - Estoy buscando [crema hidratante](nombre) con una descripción que incluya "piel seca"
+    - Necesito ver productos de [Neutrogena](marca) que cuesten menos de [30](precio_max)
+    - Enséñame productos de [cuidado facial](nombre) con un precio mayor a [15](precio_min)
+
 - intent: consultar_productos
   examples: |
-    - ¿Cuáles son los productos disponibles?
-    - Dame una lista de productos
-    - Quiero ver los productos
-    - ¿Qué productos tienes?
-    - Muéstrame un producto
-    - Muestra los productos
+    - ¿Qué productos de cuidado personal tienes?
+    - Dame una lista de cremas
+    - Quiero ver los productos de cuidado facial
+    - ¿Qué cremas hidratantes tienes?
+    - Muéstrame un producto para el cuidado de la piel
+    - Muestra los productos de cuidado personal
 
 - intent: consultar_marcas
   examples: |
-    - ¿Cuáles son las marcas disponibles?
-    - Dame una lista de marcas
-    - Quiero ver las marcas
-    - ¿Qué marcas tienes?
+    - ¿Qué marcas de cuidado personal manejas?
+    - Dame una lista de marcas de cremas
+    - Quiero ver las marcas de productos faciales
+    - ¿Qué marcas de cremas hidratantes tienes?
 
 - intent: saludo
   examples: |

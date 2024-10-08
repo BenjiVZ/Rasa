@@ -4,10 +4,26 @@ rules:
 
 - rule: Decir adiós cuando el usuario se despida
   steps:
-  - intent: despedida
-  - action: utter_despedida
+    - intent: despedida
+    - action: utter_despedida
 
 - rule: Decir 'Soy un bot' cuando el usuario lo pregunte
   steps:
-  - intent: reto_al_bot
-  - action: utter_yo_soy_un_bot
+    - intent: reto_al_bot
+    - action: utter_yo_soy_un_bot
+
+# Regla para iniciar el formulario de filtrado de productos
+- rule: Iniciar el formulario para filtrar productos
+  steps:
+    - intent: filtrar_productos
+    - action: product_filter_form  # Corregido para que coincida con el dominio
+    - active_loop: product_filter_form
+
+# Regla para manejar el final del formulario de filtrado de productos
+- rule: Manejar el final del formulario de filtrado de productos
+  condition:
+    - active_loop: product_filter_form  # Corregido
+  steps:
+    - action: product_filter_form
+    - active_loop: null
+    - action: action_listen
